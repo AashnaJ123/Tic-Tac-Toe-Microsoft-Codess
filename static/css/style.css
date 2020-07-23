@@ -1,0 +1,397 @@
+#leader{
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 2px 2px 4px rgb(255, 255, 255);
+	margin-top: 60px;
+	margin-bottom: 40px;
+	text-decoration: wavy;
+	text-decoration: underline;
+}
+
+table.leader-table{
+
+    text-align: center;
+    font-size: 25px;
+    width: 100%;
+	margin-bottom: 100px;
+	background-color: #ffffff42;
+}
+.leader-table td{
+
+	font-family: cursive;
+	outline-style: double;
+	
+}
+
+#leader-head td{
+	
+	background-color: black;
+	color: white;
+	text-shadow: 2px 2px 4px rgb(255, 255, 255);
+	font-family: cursive;
+	font-size: 32px;
+	
+}
+#leader-bottom td{
+	empty-cells: show;
+	background-color: black;
+	color: black;	
+}
+
+
+
+/* *********************************INDEX.HTML***************************************************** */
+body {
+	font-family: 'Balsamiq Sans', cursive;
+	margin: 0;
+	padding: 0;
+	background-image: url('/static/images/pokem.png');
+}
+
+#header {
+	float: right;
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 2rem;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	height: 60px;
+	padding-top: 9px;
+	text-shadow: 2px 2px 4px rgb(139, 139, 139);
+	margin-top: 0px;
+	box-sizing: border-box;
+	position: relative;
+	width: 100%;
+}
+.win-message{
+	font-family: 'Balsamiq Sans', cursive;
+	text-shadow: 2px 2px 4px rgb(255, 255, 255);
+	font-size: 30px;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	margin-top: 100px;
+	margin-bottom: 0px;
+	position: relative;
+	width: 100%;
+}
+
+
+a {
+	font-size: 20px;
+	text-decoration: underline;
+	font-family: 'Balsamiq Sans', cursive;
+	color: black;
+	text-shadow: 1px 0px 0px rgba(255, 255, 255, 0.466);
+}
+
+a:hover {
+	color: rgba(8, 99, 202, 0.808);
+}
+a:visited {
+	color: black;
+	text-shadow: 2px 2px 4px white;
+}
+
+/* ****************** Table style ****************** */
+#tab-tic-tac-toe {
+	float: right;
+	margin-top: 0px;
+	margin-right: 250px;
+	padding: 5px;
+	font-size: 4em;
+	font-family: Sans;
+	color: #444;
+	background: #F8F8F8;
+	width: 350px;
+	height: 340px;
+	text-align: center;
+	vertical-align: center;
+	border: 1px solid #CECECE;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #CCC;
+}
+
+/*Column style*/
+#tab-tic-tac-toe td {
+	
+	font-family: 'Balsamiq Sans', cursive;
+	border-collapse:collapse;
+	border-left: 5px solid #CCC;
+	border-bottom: 5px solid #CCC;
+}
+
+#tab-tic-tac-toe td:first-child {
+	border-left: none;
+}
+
+#tab-tic-tac-toe tr:last-child td {
+	border-bottom: none;
+}
+
+/*Cells*/
+#tab-tic-tac-toe td {
+	cursor: pointer;
+	height: 95px;
+	width: 95px;
+}
+
+.common-button{
+	background-color: #F8F8F8;
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 80px;
+	cursor: pointer;
+	height: 95px;
+	width: 95px;
+	border: none;
+	/* visibility: hidden; */
+}
+
+.level-button{
+
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 1em;
+	background-color: #F8F8F8;
+	cursor: pointer;
+	height: 95px;
+	width: 69px;
+	border: none;
+}
+
+
+
+#tab-tic-tac-toe td:hover {
+	background: #ececec;
+}
+
+/* ****************** Restart Button ****************** */
+
+
+
+/* ADDING NEW STYLES */
+
+.scorecheck{
+
+	display: block;
+	margin-top: 4px;
+	margin-bottom: 7px;
+	margin-left: 480px;
+	width: 300px;
+	height: 40px;
+	background: #1fff44a2;
+	font-size: 1.5em;
+	color: #FFF;
+	border: 2px solid rgb(0, 0, 0);
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+#upper-scorecheck{
+	font-family: 'Balsamiq Sans', cursive;
+	font-size: 1.2em;
+	border: 2px solid rgb(0, 0, 0);
+	width: 250px;
+	height: 40px;
+	color: #FFF;
+	background: #1fff449f;
+}
+
+.start-AI{
+	
+	position: absolute;
+	display: block;
+	margin-top: 370px;
+	margin-left: 230px;
+	width: 200px;
+	background: #00afe9;
+	font-size: 1.5em;
+	color: #FFF;
+	border: #000000;
+	border-radius: 6px;
+	cursor: pointer;
+
+
+}
+.start-Human{
+	
+	position: absolute;
+	display: block;
+	margin-top: 370px;
+	margin-left: 450px;
+	width: 200px;
+	background: #00afe9;
+	font-size: 1.5em;
+	color: #FFF;
+	border: #000000;
+	border-radius: 6px;
+	cursor: pointer;
+
+
+}
+
+.start-AI:hover {
+	background: #000000;
+}
+
+.start-Human:hover {
+	background: #000000;
+}
+
+
+.pressedStart{
+	background: #000000;
+	border: 2px solid white;
+}
+
+.scorecheck:hover {
+	background: #000000;
+}
+#upper-scorecheck:hover {
+	background: #000000;
+}
+
+
+
+
+
+
+/***********************************************FIGMA************************************************/
+
+#mainBox
+{ 
+	float: right;
+	margin-right: 0px;
+
+	box-shadow:4px 4px 4px rgba(0, 0, 0, 0.25);
+	background-image: url('/static/images/pokem.png');
+	opacity:1;
+	width: 860px;
+	height: 704px;
+}
+
+#sideCol { 
+	margin-top: 0px;
+	box-shadow:3px 4px 3px rgba(0, 0, 0, 0.25);
+	background-color:#7fb4f18e;
+	opacity:1;
+	width:400px;
+	height:704px;
+}
+
+
+#sideHeader{ 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:#00afe9;
+	opacity:1;
+	width:25rem;
+	height:91px;
+}
+
+#sideHeaderText 
+{ 
+	position: absolute;
+	font-family: Sansita;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 40px;
+	line-height: 31px;
+	margin-left: 70px;
+	margin-top: 20px;
+	align-items: center;
+	text-align: center;
+	color: #FFFFFF;
+	text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.levelSelect{
+	font-family: 'Balsamiq Sans', cursive;
+	margin-top: 50px;
+	
+	opacity:1;
+	margin-left: 50px;
+	font-size: 25px;
+	text-align: center;
+	display: inline-block;
+	color: #3d3c3c;
+
+}
+
+
+
+.home{
+	
+	position: relative;
+	width: 114px;
+	height: 61px;
+	float : right;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 20px;
+	line-height: 23px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-right: 20px;
+	color: #FFFFFF;
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* ADDING NEW STYLES */
+
+#main-head { 
+	color:rgba(13.88475039973855, 13.387500531971455, 38.25000151991844, 1);
+	opacity:1;
+	width:982px;
+	height:228px;
+	font-family:Bungee Shade;
+	text-align:center;
+	font-size:125px;
+	letter-spacing:-2;
+	line-height:undefined;
+}
+
+
+#levels{
+	margin-top: 50px;
+	padding: 3px;
+	font-size: 1em;
+	font-family: Sans;
+	color: #444;
+	background: #F8F8F8;
+	width: 300px;
+	height: 50px;
+	text-align: center;
+	vertical-align: center;
+	border: 0.5px solid #CECECE;
+	border-radius: 5px;
+	box-shadow: 1px 1px 1px #CCC;
+}
+
+#levels td {
+	
+	font-family: 'Balsamiq Sans', cursive;
+	border-collapse:collapse;
+	border-left: 1px solid #CCC;
+}
+
+#levels td:first-child {
+	border-left: none;
+}
+
+
+#levels td {
+	cursor: pointer;
+	height: 95px;
+	width: 95px;
+}
+
+.level-button:hover {
+	background: #00afe944;
+	border-radius: 5px;
+}
+
+.pressed{
+	background: #00afe95d;
+	border: 1.5px solid black;
+}
